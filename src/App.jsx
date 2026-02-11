@@ -1,22 +1,36 @@
-import React from 'react'
-import Navbar from './src/components/Navbar.jsx'
-import About from './src/components/About.jsx'
-import Contact from './src/components/Contact.jsx'
-import Footer from './src/components/Footer.jsx' 
-import Experience from './src/components/Experience.jsx'
-import Projects from './src/components/Projects.jsx'
-import Skills from './src/components/Skills.jsx'
-import Education from './src/components/Education.jsx'
+import React from 'react';
+import Navbar from './components/Navbar/Navbar.jsx';
+import About from './components/About/About.jsx';
+import Experience from './components/Experience/Experience.jsx';
+import Skills from './components/Skills/Skills.jsx';
+import Education from './components/Education/Education.jsx';
+import Contact from './components/Contact/Contact.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 
 
 
-function app () {
+
+function App () {
   return (
-    <div className='bg-[#]'>
+    <div className ="bg-[#22223B]">
+      <div className=''>
+
+      </div>
+
+      
+      <div className='relative pt-20'>
+        <Navbar />
+        <About />
+        <Experience />
+        <Skills />
+        <Education />
+        <Contact />
+        <Footer />
+      </div>
 
     </div>
   )
 }
 
-export default app;
+export default App;
