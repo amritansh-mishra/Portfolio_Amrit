@@ -44,18 +44,18 @@ const Navbar = () => {
         isScroll ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}>
 
-        <div className="text-white flex justify-between item center">
+        <div className="text-white py-5 flex justify-between items-center ">
           {/** logo */}
-          <div className="font-bold text-lg cursor-pointer">
+          <div className="font-bold text-lg cursor-pointer ">
             <span className="text-[#fca311]">&lt;</span>
             <span className="text-[#e5e5e5]">Amritansh</span>
-            <span className="text-[#fca311]"> / </span>
+            <span className="text-[#fca311]">/</span>
             <span className="text-[#e5e5e5]">Mishra</span>
             <span className="text-[#fca311]">&gt;</span>
           
           {/** Desktop-Menu */}
           </div>
-            <ul className=" md:flex space-x-8 text-[#e9d7d7]">
+            <ul className=" hidden md:flex gap-8 text-[#e9d7d7]">
               {menuItems.map((item) => (
                 //On hovering colour changes 
                 <li key={item.id} className= {`cursor-pointer hover:text-[#fca311] ${
@@ -68,6 +68,20 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+
+          {/** Social Media Icons */}
+          <div className=" hidden md:flex space-x-4 ">
+
+            {/** targert blank so that link opens at a new page*/}
+            <a href="https://github.com/amritansh-mishra" target="_blank" rel="noopener noreferrer" className="  text-[#e9d7d7] hover:text-[#fca311]">
+               <FaGithub size = {24}/> 
+            </a>
+
+            <a href="www.linkedin.com/in/amritansh-mishra-393a58303" target="_blank" rel="noopener noreferrer" className=" text-[#e9d7d7] hover:text-[#fca311] ">   
+               <FaLinkedin size = {24}/>          
+            </a>
+
+          </div>
         </div>
       </nav>
 
