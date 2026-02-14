@@ -80,8 +80,21 @@ const Navbar = () => {
             <a href="www.linkedin.com/in/amritansh-mishra-393a58303" target="_blank" rel="noopener noreferrer" className=" text-[#e9d7d7] hover:text-[#fca311] ">   
                <FaLinkedin size = {24}/>          
             </a>
-
           </div>
+          {/**Mobile menu icons */}
+
+            <div className="md:hidden">
+              {
+                menuOpen ? (
+                 <FiX className="cursor-pointer text-3xl text-[#fca311]"
+                 onClick={() => setMenuOpen(false)}/>
+                ) : (
+                  <FiMenu className="cursor-pointer text-3xl text-[#fca311]"
+                  onClick={() => setMenuOpen(true)}/>
+                )
+              } 
+
+            </div>
         </div>
       </nav>
 
