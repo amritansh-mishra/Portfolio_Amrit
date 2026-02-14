@@ -6,8 +6,10 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false); // for responsive toggle menu ki menu is open or not
+  const [menuOpen, setMenuOpen] = useState(false); // menuOpen = false (menu hidden) for toogle bar responsiveness
+
   const [activeSection, setActiveSection] = useState("");
+
   const [isScroll, setIsScroll] = useState(false);
 
   //Check scroll and change backround button
@@ -58,7 +60,7 @@ const Navbar = () => {
 
           <ul className=" hidden md:flex gap-8 text-[#e9d7d7]">
             {menuItems.map((item) => (
-              //On hovering colour changes
+              //On hovering colour changes , Apply highlighting based on active section
               <li
                 key={item.id}
                 className={`cursor-pointer hover:text-[#fca311] ${
@@ -100,18 +102,22 @@ const Navbar = () => {
             {menuOpen ? (
               <FiX
                 className="cursor-pointer text-3xl text-[#fca311]"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => setMenuOpen(false)} // Opens menu when togglebar clicked
               />
             ) : (
               <FiMenu
                 className="cursor-pointer text-3xl text-[#fca311]"
-                onClick={() => setMenuOpen(true)}
+                onClick={() => setMenuOpen(true)} // Closes menu when X clicked
               />
             )}
           </div>
         </div>
-        {/**Mobile Menu Items */},{" "}
+
+
+
+        {/**Mobile Menu Items */},
         {/**Checking whether the website is opened in mobile screen or not */}
+        
         {menuOpen && (
           <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-30 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
             <ul className="flex flex-col items-center space-y-4 py-4 text-[#e5e5e5]">
