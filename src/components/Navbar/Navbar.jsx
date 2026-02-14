@@ -51,11 +51,12 @@ const Navbar = () => {
             <span className="text-[#e5e5e5]">Amritansh</span>
             <span className="text-[#fca311]">/</span>
             <span className="text-[#e5e5e5]">Mishra</span>
-            <span className="text-[#fca311]">&gt;</span>
-          
+            <span className="text-[#fca311]">&gt;</span>         
           {/** Desktop-Menu */}
           </div>
+
             <ul className=" hidden md:flex gap-8 text-[#e9d7d7]">
+
               {menuItems.map((item) => (
                 //On hovering colour changes 
                 <li key={item.id} className= {`cursor-pointer hover:text-[#fca311] ${
@@ -63,26 +64,25 @@ const Navbar = () => {
 
                 <button onClick={() => handleMenuItemClick(item.id)}>
                   {item.label}
-                </button>
-               
+                </button>              
                 </li>
+      
               ))}
             </ul>
 
+
           {/** Social Media Icons */}
           <div className=" hidden md:flex space-x-4 ">
-
             {/** targert blank so that link opens at a new page*/}
             <a href="https://github.com/amritansh-mishra" target="_blank" rel="noopener noreferrer" className="  text-[#e9d7d7] hover:text-[#fca311]">
                <FaGithub size = {24}/> 
             </a>
-
             <a href="www.linkedin.com/in/amritansh-mishra-393a58303" target="_blank" rel="noopener noreferrer" className=" text-[#e9d7d7] hover:text-[#fca311] ">   
                <FaLinkedin size = {24}/>          
             </a>
           </div>
-          {/**Mobile menu icons */}
 
+          {/**Mobile menu icons */}
             <div className="md:hidden">
               {
                 menuOpen ? (
@@ -93,14 +93,29 @@ const Navbar = () => {
                   onClick={() => setMenuOpen(true)}/>
                 )
               } 
-
             </div>
         </div>
+
+        {/**Mobile Menu Items */}, {/**Checking whether the website is opened in mobile screen or not */}
+        { menuOpen && (
+          <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
+            <ul className="flex flex-col items-center space-y-4 py-4 text-[#e9d7d7]">
+               {menuItems.map((item => (
+                <li key= {item.id} className= {`cursor-pointer hover:text-[#fca311]
+                    ${activeSection === item.id ? "text-[#fca311]":""
+                    }`} 
+                >
+                  <button onClick={() => handleMenuItemClick(item.id)}>
+                    {item.label}
+                  </button>
+
+                </li>
+              )))}
+            </ul>
+          </div>
+        )}
       </nav>
-
   );
-
-
 };
 
 export default Navbar;
