@@ -1,4 +1,4 @@
-# Understandig UseState Usage
+# Understandig UseState Usage In Navbar
 
 ## [menuOpen,setMenuOpen] = useState(false)
 
@@ -82,16 +82,16 @@ useEffect runs:
 ═════════════════════════════════════════════════════════════════
 
 [User scrolls down 60px]
-  ↓
+ ↓
 handleScroll fires
-  ↓
+ ↓
 window.scrollY = 60
 60 > 50 = true
-  ↓
+ ↓
 setIsScroll(true)
-  ↓
+ ↓
 Component re-renders
-  ↓
+ ↓
 Navbar now has background blur
   
 ═════════════════════════════════════════════════════════════════
@@ -120,3 +120,34 @@ useEffect cleanup runs:
 Navbar removed from DOM
   ↓
 All state destroyed
+
+
+# Learning From Making About Section 
+ 
+ ### Why we used <section> instead of <div>?
+
+- <section> = explicitly tells browsers, developers, and assistive technologies that this is a thematic grouping of content.
+- <div> = it's just a generic container
+ 
+ ### Understanding Tailwind CSS
+
+- flex-col-reverse = Stacks children vertically in reverse order (image first, then text on mobile)
+- md:flex-row = Horizontal layout on medium screens (side by side)
+- items-center = Centers items vertically
+- justify-between = Distributes space between items (pushes them to opposite ends)
+
+- text-center = Centers text on mobile
+- md:w-1/2 = Takes 50% width on medium screens
+- md:text-left = Left-aligns text on medium screens
+- mt-8 = Top margin of 2rem (32px)
+- md:mt-0 = Removes top margin on medium screen
+
+### Why do we use span?
+- <span> = is a generic inline container used to apply styles or JavaScript to a specific portion of text without breaking the flow.
+- <div> = breaks the line and create a new one
+
+#### Why do we used <a> not <button>?
+ - <a href="...">DOWNLOAD CV</a>  // ✅ Link to a file
+    vs
+   <button>DOWNLOAD CV</button>    // ❌ Performs an action
+
