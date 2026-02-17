@@ -47,6 +47,19 @@ const Experience = () => {
                 index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
               } sm:ml-44 sm:mr-44 ml-8 transform transition-transform duration-300 hover:scale-105`}>
 
+            {/** flex container for image and text */}
+
+            <div className=" flex items-center space-x-6">
+
+              {/**Compny logo */}
+              <div className="w-16 h-16 bg-whiterounded-md overflow-hidden">
+                <img className="w-full h-full object-cover" src="" alt="" /> {/** experience.img .company */}
+              </div>
+
+
+      
+            </div>
+
             </div>
 
           </div>
