@@ -1,11 +1,13 @@
 import React from "react";
-
+import { SkillsInfo } from "../../constants";
 
 const Skills = () => {
   return (
-    <div>
-        
-    </div>
+    <section
+    id='skills'
+    className=" py-24 px-24 md:px-[vw]  lg:-[vw]">
+
+    </section>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from "react";
-import { TypeAnimation } from "react-type-animation"
+import { TypeAnimation } from "react-type-animation";
 import Tilt from "react-parallax-tilt";
+import ProfileImage from '../../assets/profile.jpeg';
 
 
 const About = () => {
@@ -63,13 +64,27 @@ const About = () => {
           DOWNLOAD CV 
         </a>
         </div>
-        {/**right side content */}
-        <div className="md:w-1/2 flex justify-center md:justify-end">
-        <img src="" alt=""
-        className=" w-full h-full rounded-full">
 
-        </img>
-       
+        {/**right side content */}
+        <div className="md:w-1/2 flex justify-center md:justify-end"> 
+
+        <Tilt className="w-68 h-48 sm:w-64 md:w-[20rem] md:h-[20rem] border-4 border-black rounded-full"
+         tiltMaxAngleX={20}
+          tiltMaxAngleY={20}
+          perspective={1000}
+          transitionSpeed={1000}
+          scale={1.05}
+          gyroscope={true}>
+
+          <img 
+          src={ProfileImage} 
+          alt="Amritansh Mishra"
+          className=" w-full h-full rounded-full object-cover"
+          style={{ filter: 'drop-shadow(0 10px 20px rgba(252, 163, 17, 0.5))' }}
+          />
+        </Tilt>
+
+        
         </div>
       </div>
 
