@@ -22,7 +22,7 @@ const Experience = () => {
     <div className="relative">
 
       {/** Vertical line */}
-      <div className=" absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full">
+      <div className=" absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div>
          {/**Experience Enteries */}
          {experiences.map((experience, index) => (
           <div
@@ -65,7 +65,7 @@ const Experience = () => {
           </div>
          ))}
 
-      </div>
+      
 
     </div>
    </section>
