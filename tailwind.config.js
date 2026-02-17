@@ -23,7 +23,10 @@ export default {
         },
         animation:{
           blob:'blob 10s infinte'
-        }
+        },
+       backgroundImage: {
+          'skills-gradient': 'linear-gradient(38.73deg, rgba(252, 163, 17, 0.15) 0%, rgba(252, 163, 17, 0) 50%), linear-gradient(141.27deg, rgba(252, 163, 17, 0) 50%, rgba(252, 163, 17, 0.15) 100%)',
+        },
       },
     },
   },
