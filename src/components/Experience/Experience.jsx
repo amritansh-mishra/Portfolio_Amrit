@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <section
       id="experiences"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom-2"
     >
       {/**Section title */}
 
@@ -37,7 +37,7 @@ const Experience = () => {
                 src=""
                 alt=""
                 className="w-full h-full object-cover rounded-full"
-              />{" "}
+              />
               {/** experience.img and .company */}
             </div>
             {/**Content Section */}
@@ -46,7 +46,7 @@ const Experience = () => {
                 index % 2 === 0
                   ? "sm:ml-auto" // even - pushes to LEFT
                   : "sm:mr-auto" // odd - pushes to RIGHT
-              } ml-8 mr-8`}
+              } ml-4 mr-4`}
             >
               {/** flex container for image and text */}
               <div className=" flex items-center space-x-6">
@@ -74,21 +74,20 @@ const Experience = () => {
                     </h4>
                   </div>
                 </div>
-                <p className="mt-4 text-gray-400">
-                  {experience.desc}
-                </p>
-                <div>
-                  <h5 className="font-medium text-white mt-4">Skills</h5>
-                  <ul>
-                    {experience.skills.map((skill, index) => (
-                      <li
-                        key={index}
-                        className="text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg ">
-                        
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              </div>
+              <div>
+                <p className="mt-4 text-gray-400">{experience.desc}</p>
+                <h5 className="font-medium text-white mt-4">Skills</h5>
+                <ul className="flex flex-wrap mt-2">
+                  {experience.skills.map((skill, index) => (
+                    <li
+                      key={index}
+                      className="bg-[#fca311] text-gray-950 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400 "
+                    >
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
