@@ -23,9 +23,9 @@ const Navbar = () => {
 
   const menuItems = [
     { id: "about", label: "About" },
-    { id: "experience", label: "Experience" },
+    { id: "experiences", label: "Experience" },
     { id: "skills", label: "Skills" },
-    { id: "education", label: "Education" },
+    { id: "achievement", label: "Achievements" },
     { id: "work", label: "Work" },
   ];
 
@@ -33,7 +33,17 @@ const Navbar = () => {
   const handleMenuItemClick = (sectionId) => {
     setActiveSection(sectionId);
     setMenuOpen(false);
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+    element.scrollIntoView({ 
+      behavior: 'smooth', 
+      block: 'start',
+    });
+  }
   };
+
+  
 
   return (
     {
