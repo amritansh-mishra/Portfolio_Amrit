@@ -7,6 +7,7 @@ import Education from './components/Education/Education.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import BlurBlob from './BlurBlob.jsx';
+import Work from './components/Work/Work.jsx';
 
 
 
@@ -27,6 +28,7 @@ function App () {
         <About />
         <Skills />
         <Experience />
+        <Work />
         <Education /> 
         <Contact />
         <Footer />
