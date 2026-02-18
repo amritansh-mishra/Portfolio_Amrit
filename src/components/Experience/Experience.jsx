@@ -12,7 +12,7 @@ const Experience = () => {
       <div className=" text-center mb-10">
         <h2 className="text-4xl text-white font-semibold ">EXPERIENCE</h2>
         <div className="w-44 h-1 bg-[#fca311] mx-auto mt-1 rounded-full"></div>
-        <p className="text-white mt-4 text-lg font-semibold">
+        <p className="text-gray-300 mt-4 text-lg sm:text-xl font-semibold">
           Heloo there I'm very unexperienced fellow
         </p>
       </div>

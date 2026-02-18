@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar.jsx';
 import About from './components/About/About.jsx';
 import Experience from './components/Experience/Experience.jsx';
 import Skills from './components/Skills/Skills.jsx';
-import Education from './components/Education/Education.jsx';
+import Achievements from './components/Achievements/Achievement.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import BlurBlob from './BlurBlob.jsx';
@@ -29,7 +29,7 @@ function App () {
         <Skills />
         <Experience />
         <Work />
-        <Education /> 
+        <Achievements /> 
         <Contact />
         <Footer />
       </div>

@@ -16,7 +16,7 @@ const Skills = () => {
 
       <div className="w-24 h-1 bg-[#fca311] mx-auto rounded-full"></div>
       <div>
-        <p className="text-white mt-4 text-lg sm:text-xl font-semibold">
+        <p className="text-gray-300 mt-4 text-lg sm:text-xl font-semibold">
           A collection of technical things that inspires me and itnrigues me for
           projects
         </p>

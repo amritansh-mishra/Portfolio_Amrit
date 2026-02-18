@@ -128,7 +128,7 @@ export const SkillsInfo = [
     },
   ];
   
-  export const education = [
+  export const achievement = [
     {
       id: 0,
       img: "",
