@@ -4,7 +4,7 @@ import { achievement } from "../../constants";
 const Achievements = () => {
   return (
    <section
-         id=""
+         id="achievement"
          className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans clip-path-custom-2"
        >
          {/**Section title */}
