@@ -12,7 +12,9 @@ import mysqlLogo from './assets/mysql.png';
 import mongodbLogo from './assets/mongodb.png';
 import cLogo from './assets/c.png';
 import javaLogo from './assets/java.png';
-
+import odooLogo from './assets/odoo.jpeg';
+import gfgLogo from './assets/gfg.jpeg';
+import enigmaLogo from './assets/enigma.jpeg'
 
 
 
@@ -131,40 +133,32 @@ export const SkillsInfo = [
   export const achievement = [
     {
       id: 0,
-      img: "",
-      school: "GLA University, Mathura",
-      date: "Sept 2022 - July 2024",
-      grade: "7.81 CGPA",
-      desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
-      degree: "Master of Computer Applications - MCA",
+      img: odooLogo,
+      school: "",
+      date: "September 20-21 (2025)",
+      grade: "Finalist ",
+      desc: "Made to Top-90 Teams from all over India for offline hackathon.",
+      degree: "Odoo X Nmit Hackathon",
     },
     {
       id: 1,
-      img: "",
-      school: "BSA College, Mathura",
-      date: "Sept 2018 - Aug 2021",
-      grade: "73.2%",
-      desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-      degree: "Bachelor of Science - BSC (Computer Science)",
+      img: gfgLogo,
+      school: "",
+      date: "Sept 12-13 (2025)",
+      grade: "Finalist",
+      desc: " Went To NMIMS, Mumbai for final offline round. Coded for 24 hours and presented. Got praised from jury but others had better UI than us. ",
+      degree: "GFG, NMIMS",
     },
     {
       id: 2,
-      img: "",
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2017 - March 2018",
-      grade: "78%",
-      desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-      degree: "CBSE(XII) - PCM with Computer Science",
+      img: enigmaLogo,
+      school: "",
+      date: "November 11 (2025)",
+      grade: "3rd Place",
+      desc: "Participated in Bengaluru's Inter-college Fest and won 3rd prize in boardRoom conference. I was the CFO of my team.",
+      degree: "Board Room Conference",
     },
-    {
-      id: 3,
-      img: "",
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2015 - March 2016",
-      grade: "87.5%",
-      desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
-      degree: "CBSE(X), Science with Computer Application",
-    },
+    
   ];
   
   export const projects = [

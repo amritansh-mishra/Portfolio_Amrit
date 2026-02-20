@@ -32,10 +32,10 @@ const Achievements = () => {
                }`}
              >
                {/**Timeline circle */}
-               <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#fca311] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+               <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-2 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
                  <img
-                   src=""
-                   alt=""
+                   src={edu.img}
+                   alt={edu.school}
                    className="w-full h-full object-cover rounded-full"
                  />
                  {/** experience.img and .company */}
@@ -49,19 +49,19 @@ const Achievements = () => {
                  } ml-4 mr-4`}
                >
                  {/** flex container for image and text */}
-                 <div className=" flex items-center space-x-6">
+                 <div className=" flex flex-col items-center space-x-6">
                    {/**Compny logo */}
-                   <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
+                   <div className="w-full bg-white rounded-md overflow-hidden">
                      <img
                        className="w-full h-full object-cover"
-                       src=""
+                       src={edu.img}
                        alt={edu.school}
                      />{" "}
                      {/** experience.img .company */}
                    </div>
    
                    {/**Role,Company name, and Date */}
-                   <div className="flex flex-col justify-between">
+                   <div className="flex flex-col items-center">
                      <div>
                        <h3 className="text-xl sm:text-2xl text-white font-semibold">
                          {edu.degree}
