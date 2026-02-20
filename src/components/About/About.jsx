@@ -29,11 +29,9 @@ const About = () => {
             <span className="text-[#fca311] font-semibold">
               <TypeAnimation
                 sequence={[
-                  "Full-Stack Developer",
+                  "Backend Developer",
                   2000,
                   "React Developer",
-                  2000,
-                  "UI/UX Enthusiast",
                   2000,
                   "Problem Solver",
                   2000,
@@ -47,7 +45,8 @@ const About = () => {
           </h3>
         {/** about me paragraph */}
         <p className=" text-base sm:text-lg md:text-lg text-white mb-10 mt-8 leading-relaxed ">
-          I’m a passionate software developer who enjoys turning ideas into real, working applications through clean and efficient code. I have a strong interest in building user-friendly web experiences and love working with modern technologies like React and JavaScript to solve real-world problems. I’m constantly learning new tools and improving my skills, whether it’s through projects, debugging challenges, or exploring better ways to design and optimize applications.
+          A developer who loves turning late night coffee's into clean code. 
+          Love to learn new stuffs. Currently building in public on 'X'. Let's connect there. 
         </p>
 
         {/** Resume Button */}
@@ -79,7 +78,7 @@ const About = () => {
           src={ProfileImage} 
           alt="Amritansh Mishra"
           className=" w-full h-full rounded-full object-cover"
-          style={{ filter: 'drop-shadow(0 10px 20px rgba(252, 163, 17, 0.5))' }}
+      
           />
         </Tilt>
 

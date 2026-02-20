@@ -21,7 +21,6 @@ const Footer = () => {
           {[
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },
-            { name: "Experience", id: "experiences" },
             { name: "Work", id: "work" },
             { name: "Achievements", id: "achievement" },
           ].map((item, index) => (
@@ -38,8 +37,8 @@ const Footer = () => {
         {/* Social Media Icons - Responsive */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
-            { icon: <FaTwitter />, link:"https://www.linkedin.com/in/amritansh-mishra-393a58303/"  },
-            { icon: <FaLinkedin />, link:"https://x.com/1104_Amrit"  },
+            { icon: <FaLinkedin />, link:"https://www.linkedin.com/in/amritansh-mishra-393a58303/"  },
+            { icon: <FaTwitter />, link:"https://x.com/1104_Amrit"  },
             
           ].map((item, index) => (
             <a

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
   /** in navbar i need 4 icons, github, linkdin, toogle menu and cross. Search from React-icons */
 }
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // menuOpen = false (menu hidden) for toogle bar responsiveness
@@ -23,7 +23,6 @@ const Navbar = () => {
 
   const menuItems = [
     { id: "about", label: "About" },
-    { id: "experiences", label: "Experience" },
     { id: "skills", label: "Skills" },
     { id: "achievement", label: "Achievements" },
     { id: "work", label: "Work" },
@@ -36,14 +35,12 @@ const Navbar = () => {
 
     const element = document.getElementById(sectionId);
     if (element) {
-    element.scrollIntoView({ 
-      behavior: 'smooth', 
-      block: 'start',
-    });
-  }
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   };
-
-  
 
   return (
     {
@@ -61,9 +58,9 @@ const Navbar = () => {
           {/** logo */}
           <div className="font-bold text-lg cursor-pointer ">
             <span className="text-[#fca311]">&lt;</span>
-            <span className="text-[#e5e5e5]">Amritansh</span>
+            <span className="text-[#e5e5e5]">CodeIn</span>
             <span className="text-[#fca311]">/</span>
-            <span className="text-[#e5e5e5]">Mishra</span>
+            <span className="text-[#e5e5e5]">CodeOut</span>
             <span className="text-[#fca311]">&gt;</span>
             {/** Desktop-Menu */}
           </div>
@@ -105,6 +102,14 @@ const Navbar = () => {
             >
               <FaLinkedin size={24} />
             </a>
+            <a
+              href="https://x.com/1104_Amrit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" text-[#e9d7d7] hover:text-[#fca311] "
+            >
+              <FaTwitter size={24} />
+            </a>
           </div>
 
           {/**Mobile menu icons */}
@@ -122,12 +127,8 @@ const Navbar = () => {
             )}
           </div>
         </div>
-
-
-
         {/**Mobile Menu Items */},
         {/**Checking whether the website is opened in mobile screen or not */}
-        
         {menuOpen && (
           <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-30 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
             <ul className="flex flex-col items-center space-y-4 py-4 text-[#e5e5e5]">
@@ -158,6 +159,14 @@ const Navbar = () => {
                   className=" text-[#e9d7d7] hover:text-white "
                 >
                   <FaLinkedin size={24} />
+                </a>
+                <a
+                  href="https://x.com/1104_Amrit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" text-[#e9d7d7] hover:text-[#fca311] "
+                >
+                  <FaTwitter size={24} />
                 </a>
               </div>
             </ul>

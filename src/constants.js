@@ -155,7 +155,7 @@ export const SkillsInfo = [
       school: "",
       date: "November 11 (2025)",
       grade: "3rd Place",
-      desc: "Participated in Bengaluru's Inter-college Fest and won 3rd prize in boardRoom conference. I was the CFO of my team.",
+      desc: "Participated in Bengaluru's Inter-college Fest and won 3rd prize in boardRoom conference. I was the CFO of my team",
       degree: "Board Room Conference",
     },
     
